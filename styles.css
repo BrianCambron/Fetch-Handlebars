@@ -1,9 +1,20 @@
-.Brian-profile{
+.Brian-profile {
   border-radius: 50%;
   width: 65%;
 }
-.left-aside{
-  display: inline-flex;
-  justify-content: center;
+
+.left-aside {
+  display: inline-block;
   margin-top: 100px;
+  text-align: left;
+  margin-left: 70px;
+}
+
+.profile-btn {
+  width: 275px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: solid 1px #D8DBDB;
+  background-color: white;
 }
