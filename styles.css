@@ -56,21 +56,38 @@
 .container-2 {
   position: absolute;
   display: inline-flex;
-  top: 20%;
-  left: 30%;
+  top: 15%;
+  left: 25%;
 }
-.repos-list{
+
+.search-bar {
+  margin-bottom: 35px;
+
+}
+.search-bar input{
+  width: 400px;
+  height: 25px;
+  border-radius: 4px;
+  border: 1px solid #E1E4E8;
+  padding-left: 12px;
+}
+
+.repos-list {
   list-style: none;
   width: 860px;
 }
-.repos-list a{
+
+.repos-list a {
   text-decoration: none;
   font-size: 25px;
   color: #0468D2;
 }
-.repos-list button{
+
+.repos-list button {
   margin-left: 800px;
 }
-.repos-list p{
+
+.repos-list p {
   margin-bottom: 45px;
+  margin-top:0;
 }

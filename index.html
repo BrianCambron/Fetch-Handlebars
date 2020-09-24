@@ -40,6 +40,10 @@
   </div>
   <script id="repo-template" type="text/x-handlebars-template">
     <ul class="repos-list">
+    <div class="search-bar">
+    <input type="text" placeholder="Find a repository..">
+    <hr style="margin-top:20px;">
+    </div>
       {{#each repos}}
     <li><a href="{{this.url}}">{{this.name}}</a><button>&#x2606; Star</button><p>{{this.language}}</p></li><hr>
       {{/each}}
