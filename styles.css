@@ -3,6 +3,10 @@
   width: 65%;
 }
 
+.container {
+  position: relative;
+}
+
 .left-aside {
   display: inline-block;
   margin-top: 100px;
@@ -18,17 +22,55 @@
   border: solid 1px #D8DBDB;
   background-color: white;
 }
-.following-follower{
+
+.following-follower {
   margin-top: 13px;
 }
-.following-follower a{
+
+.following-follower a {
   text-decoration: none;
   color: #576068;
   padding-right: 15px;
 }
-.aside-hr{
+
+.aside-hr {
   margin-top: 45px;
+  width: 60%;
+  margin-top: 45px;
+  margin-right: 180px;
 }
-.organizations{
+
+.organizations {
   font-size: 17px;
+}
+
+.css-2020 {
+  width: 14%;
+}
+
+.container-1 {
+  margin-left: 70px;
+  display: inline-block;
+}
+
+.container-2 {
+  position: absolute;
+  display: inline-flex;
+  top: 20%;
+  left: 30%;
+}
+.repos-list{
+  list-style: none;
+  width: 860px;
+}
+.repos-list a{
+  text-decoration: none;
+  font-size: 25px;
+  color: #0468D2;
+}
+.repos-list button{
+  margin-left: 800px;
+}
+.repos-list p{
+  margin-bottom: 45px;
 }

@@ -25,10 +25,25 @@
         <a class="far fa-star"href="{{starred_url}}">0</a>
       </div>
       <hr class="aside-hr">
-      <h2 class="organizations">Organizations</h2>
-
     </aside>
   </div>
+</script>
+  <div class="container-1">
+
+  </div>
+  <script id="org-template" type="text/x-handlebars-template">
+    <h2>Organizations</h2>
+  <img class ="css-2020"src={{avatar_url2}} alt="ccs-summer-2020">
+</script>
+  <div class="container-2">
+
+  </div>
+  <script id="repo-template" type="text/x-handlebars-template">
+    <ul class="repos-list">
+      {{#each repos}}
+    <li><a href="{{this.url}}">{{this.name}}</a><button>&#x2606; Star</button><p>{{this.language}}</p></li><hr>
+      {{/each}}
+    </ul>
 </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
   <script src="main.js"></script>

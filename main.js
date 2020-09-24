@@ -32,13 +32,28 @@ fetch('https://api.github.com/users/BrianCambron')
   .then(response => response.json())
   .then(data => {
     console.log(data)
-      let avatar_url2 = data[0].avatar_url;
-      console.log(avatar_url2);
-      const source = document.getElementById("entry-template").innerHTML;
+    let avatar_url2 = data[0].avatar_url;
+    console.log(avatar_url2);
+    const source = document.getElementById("org-template").innerHTML;
+    const template = Handlebars.compile(source);
+    const context = {
+      avatar_url2: data[0].avatar_url,
+    };
+    const html = template(context);
+    document.querySelector('.container-1').innerHTML = html;
+  });
+  fetch('https://api.github.com/users/BrianCambron/repos')
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+
+      const source = document.getElementById("repo-template").innerHTML;
+      // console.log('source', source);
       const template = Handlebars.compile(source);
       const context = {
-        avatar_url2: data[0].avatar_url,
+          repos:data,
       };
       const html = template(context);
-      // document.querySelector('.container').innerHTML = html;
+      // console.log(html);
+      document.querySelector('.container-2').innerHTML = html;
   });
