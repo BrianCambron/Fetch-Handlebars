@@ -18,3 +18,17 @@
   border: solid 1px #D8DBDB;
   background-color: white;
 }
+.following-follower{
+  margin-top: 13px;
+}
+.following-follower a{
+  text-decoration: none;
+  color: #576068;
+  padding-right: 15px;
+}
+.aside-hr{
+  margin-top: 45px;
+}
+.organizations{
+  font-size: 17px;
+}
